@@ -1,0 +1,26 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore uploads and media (optional, if these shouldn't be versioned)
+uploads/
+
+# Ignore sensitive files
+.env
+*.log
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Composer dependencies (if used)
+vendor/
+
+# Node dependencies (if used)
+node_modules/
+
+# OS-specific files
+*.bak
+*.tmp
+*.swp
