@@ -1,0 +1,45 @@
+@echo off
+set BASEDIR=bseri
+
+:: Create folders
+mkdir %BASEDIR%\blog\admin
+mkdir %BASEDIR%\blog\assets\css
+mkdir %BASEDIR%\blog\assets\js
+mkdir %BASEDIR%\blog\assets\images
+mkdir %BASEDIR%\blog\includes
+mkdir %BASEDIR%\blog\uploads
+
+:: Create files in admin
+echo.>%BASEDIR%\blog\admin\login.php
+echo.>%BASEDIR%\blog\admin\logout.php
+echo.>%BASEDIR%\blog\admin\index.php
+echo.>%BASEDIR%\blog\admin\dashboard.php
+echo.>%BASEDIR%\blog\admin\post-create.php
+echo.>%BASEDIR%\blog\admin\post-edit.php
+echo.>%BASEDIR%\blog\admin\media-upload.php
+echo.>%BASEDIR%\blog\admin\user-profile.php
+
+:: Create asset files
+echo.>%BASEDIR%\blog\assets\css\style.css
+echo.>%BASEDIR%\blog\assets\js\blog.js
+
+:: Create includes
+echo.>%BASEDIR%\blog\includes\db.php
+echo.>%BASEDIR%\blog\includes\config.php
+echo.>%BASEDIR%\blog\includes\functions.php
+echo.>%BASEDIR%\blog\includes\auth.php
+echo.>%BASEDIR%\blog\includes\head.php
+echo.>%BASEDIR%\blog\includes\header.php
+echo.>%BASEDIR%\blog\includes\footer.php
+
+:: Create root blog files
+echo.>%BASEDIR%\blog\index.php
+echo.>%BASEDIR%\blog\post.php
+echo.>%BASEDIR%\blog\category.php
+echo.>%BASEDIR%\blog\tag.php
+echo.>%BASEDIR%\blog\search.php
+echo.>%BASEDIR%\blog\rss.php
+echo.>%BASEDIR%\blog\404.php
+
+echo Folder structure for BSERI blog created successfully.
+pause
